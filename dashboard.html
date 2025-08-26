@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIELIT WBL Portal - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .dashboard-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+        .welcome-section {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fas fa-laptop-code me-2"></i>
+                    NIELIT WBL Portal
+                </a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#"><i class="fas fa-user me-1"></i>Profile</a>
+                    <a class="nav-link" href="#"><i class="fas fa-cog me-1"></i>Settings</a>
+                    <a class="nav-link" href="index.html"><i class="fas fa-sign-out-alt me-1"></i>Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Welcome Section -->
+        <div class="container">
+            <div class="welcome-section">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-6 fw-bold text-primary mb-2">Welcome to Your Dashboard!</h1>
+                        <p class="lead text-muted mb-0">You have successfully logged into the NIELIT WBL Portal.</p>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="me-3">
+                                <div class="fw-bold">John Doe</div>
+                                <small class="text-muted">john.doe@example.com</small>
+                            </div>
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="row mb-4">
+                <div class="col-md-3 mb-3">
+                    <div class="stat-card">
+                        <i class="fas fa-book fa-2x mb-2"></i>
+                        <h3 class="mb-1">12</h3>
+                        <p class="mb-0">Active Courses</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="stat-card">
+                        <i class="fas fa-certificate fa-2x mb-2"></i>
+                        <h3 class="mb-1">5</h3>
+                        <p class="mb-0">Certificates</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="stat-card">
+                        <i class="fas fa-clock fa-2x mb-2"></i>
+                        <h3 class="mb-1">48</h3>
+                        <p class="mb-0">Hours Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="stat-card">
+                        <i class="fas fa-trophy fa-2x mb-2"></i>
+                        <h3 class="mb-1">3</h3>
+                        <p class="mb-0">Achievements</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Online Learning</h5>
+                        <p class="text-muted">Access your courses and learning materials anytime, anywhere.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Start Learning</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Community</h5>
+                        <p class="text-muted">Connect with fellow learners and share your experiences.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Join Community</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Progress Tracking</h5>
+                        <p class="text-muted">Monitor your learning progress and achievements.</p>
+                        <a href="#" class="btn btn-primary btn-sm">View Progress</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Certifications</h5>
+                        <p class="text-muted">Earn certificates upon course completion.</p>
+                        <a href="#" class="btn btn-primary btn-sm">View Certificates</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Schedule</h5>
+                        <p class="text-muted">Manage your learning schedule and deadlines.</p>
+                        <a href="#" class="btn btn-primary btn-sm">View Schedule</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Support</h5>
+                        <p class="text-muted">Get help and support when you need it.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="dashboard-card p-4">
+                        <h4 class="fw-bold mb-3">Recent Activity</h4>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center border-0 px-0">
+                                <div class="bg-success rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Completed Module 3: Advanced JavaScript</h6>
+                                    <small class="text-muted">2 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center border-0 px-0">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="fas fa-play text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Started Module 4: React Fundamentals</h6>
+                                    <small class="text-muted">1 day ago</small>
+                                </div>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center border-0 px-0">
+                                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="fas fa-certificate text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Earned Certificate: Web Development Basics</h6>
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
